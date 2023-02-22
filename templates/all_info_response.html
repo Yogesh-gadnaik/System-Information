@@ -1,0 +1,103 @@
+<html>
+    <body bgcolor="Lavender"><center>
+        <h1> Your output for the All System Information</h1>
+        <hr size="2" color="blue">
+
+        <table bgcolor="yellow" border="2" width="50%" height="25%">
+            <tr>
+                <th bgcolor="red">Information</th>
+                <th  bgcolor="red">Value</th>
+            </tr>
+            <tr>
+                <td> System</td>
+                <td> {{ result['system'] }}</td>
+            </tr>
+            <tr>
+                <td>Node</td>
+                <td> {{ result['node'] }}</td>
+            </tr>
+            <tr>
+                <td> Release</td>
+                <td> {{ result['release'] }}</td>
+            </tr>
+            <tr>
+                <td> Version</td>
+                <td> {{ result['version'] }}</td>
+            </tr>
+            <tr>
+                <td> Machine</td>
+                <td> {{ result['machine'] }}</td>
+            </tr>
+            <tr>
+                <td> Processor</td>
+                <td> {{ result['processor'] }}</td>
+            </tr>
+            <tr>
+                <td> Architecture_Details</td>
+                <td> {{ result['architecture_details'] }}</td>
+            </tr>
+            <tr>
+                <td>Platform_Details</td>
+                <td> {{ result['platform_details'] }}</td>
+            </tr>
+            <tr>
+                <td> Virtual_Memory</td>
+                <td> {{ result['vertual_memory'] }}</td>
+            </tr>
+            <tr>
+                <td> Physical_Core</td>
+                <td> {{ result['physical_core'] }}</td>
+            </tr>
+            <tr>
+                <td> Logical_Core</td>
+                <td> {{ result['logical_core'] }}</td>
+            </tr>
+            <tr>
+                <td> Cpu_Frequency</td>
+                <td> {{ result['cpu_frequency'] }}</td>
+            </tr>
+            <tr>
+                <td>Min_Frequency</td>
+                <td> {{ result['min_frequency'] }}</td>
+            </tr>
+            <tr>
+                <td>Max_Frequency</td>
+                <td> {{ result['max_frequency'] }}</td>
+            </tr>
+            <tr>
+                <td> Cpu_Utiliazation</td>
+                <td> {{ result['cpu_utilization'] }}</td>
+            </tr>
+            <tr>
+                <td>Per_cpu_Utilization</td>
+                <td> {{ result['per_cpu_utilization'] }}</td>
+            </tr>
+            <tr>
+                <td>Manufacturer</td>
+                <td> {{ result['manufacturer'] }}</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td> {{ result['model'] }}</td>
+            </tr>
+            <tr>
+                <td>System_Name</td>
+                <td> {{ result['sysname'] }}</td>
+            </tr>
+            <tr>
+                <td>Number_Of_Processsors</td>
+                <td> {{ result['no_processors'] }}</td>
+            </tr>
+            <tr>
+                <td>System_Type</td>
+                <td> {{ result['systemtype'] }}</td>
+            </tr>
+            <tr>
+                <td>System_Family</td>
+                <td> {{ result['systemfamily'] }}</td>
+            </tr>
+        </table>
+        </center>
+    </body>
+
+</html>

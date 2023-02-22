@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html> -->
+<html>
+    <body bgcolor="Lavender">
+    <center><h1>Get Your System Information</h1>
+        <hr size="3" color="red">
+        <form action="/home" method="POST" >
+        <table height="25%" border="2" bgcolor="yellow">
+            <tr>
+                <h2>Select The System Information Below</h2>
+            </tr>
+            <tr>
+                <td>
+                <center>
+                    <h3>
+                        <label for="System_Information" name="abc">Choose a System Information:</label>
+                    </h3>
+                </center>
+                </td>
+                <td>
+                    <center>
+                        <select name="select_val">
+                            <option value="system">System</option>
+                            <option value="node">Node</option>
+                            <option value="release">Release</option>
+                            <option value="version">version</option>
+                            <option value="machine">machine</option>
+                            <option value="processor">processor</option>
+                            <option value="architecture_details">architecture_details</option>
+                            <option value="platform_details">platform_details</option>
+                            <option value="virtual_memory">virtual_memory</option>
+                            <option value="physical_core">physical_core</option>
+                            <option value="logical_core">logical_core</option>
+                            <option value="cpu_frequency">cpu_frequency</option>
+                            <option value="min_frequency">min_frequency</option>
+                            <option value="max_frequency">max_frequency</option>
+                            <option value="cpu_utilization">cpu_utilization</option>
+                            <option value="per_cpu_utilization">per_cpu_utilization</option>
+                            <option value="manufacturer">manufacturer</option>
+                            <option value="model">model</option>
+                            <option value="sysname">sysname</option>
+                            <option value="no_processor">no_processor</option>
+                            <option value="systemtype">systemtype</option>
+                            <option value="systemfamily">systemfamily</option>
+                            <option value="allinfo">allinfo</option>
+                        </select>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <center>
+                        <input type="submit" value="Submit">
+                    </center>
+                </td>
+                <td>
+                    <center><input type="reset" value="Cancel">
+                    </center>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </center>
+    </body>
+</html>
