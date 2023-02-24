@@ -1,29 +1,25 @@
 
 from flask import Flask, render_template, request
+from logic.getsysinfo import sys_name
 
-from handlers.handlers import Load_Home_Page, Load_Root_Page
 
 apk = Flask(__name__)
 
 
 @apk.route('/')
 def root():
-    page_Name = Load_Root_Page()
-    return render_template(page_Name)
+    return render_template('index.html')
 
 
 @apk.route('/home', methods=['POST', 'GET'])
 def load_home():
-    if request.method == 'POST':
-        system_info = request.form['select_val']
-        resp = Load_Home_Page(system_info)
-        if system_info == "allinfo":
-            return render_template('all_info_response.html', result=resp)
-        else:
-            return render_template('response.html', result=resp)
+    system_info = request.form['select_val']
+    response = sys_name(system_info)
+    if system_info == "allinfo":
+        return render_template('all_info_response.html', result=response)
     else:
-        return "<html><body><h1>Error</h1></body></html>"
+        return render_template('response.html', result=response)
 
 
 if __name__ == '__main__':
-    apk.run(debug=True)
+    apk.run(debug=True,port=1999)
