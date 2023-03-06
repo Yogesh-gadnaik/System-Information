@@ -40,3 +40,4 @@ def insert_data(uname, password, age, gender):
         return 1
     else:
         return 0
+

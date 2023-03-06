@@ -2,7 +2,6 @@
 from flask import Flask, render_template, request
 from logic.getsysinfo import sys_name, database_check, insert_data
 
-
 apk = Flask(__name__)
 
 
@@ -53,3 +52,4 @@ def register():
 
 if __name__ == '__main__':
     apk.run(debug=True, port=5001)
+
